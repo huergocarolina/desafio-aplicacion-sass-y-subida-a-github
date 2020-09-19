@@ -1,0 +1,349 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+  
+
+  /*en qué sección del sitio me encuentro*/
+  .seccion{
+    color: rgb(104, 194, 194);
+    font-size: 45px;
+    text-align: center;
+    /*border-bottom: 2px solid black;*/
+    letter-spacing: 3px;
+    margin: 0px;
+  }
+  
+
+  /*menú de navegación - estético*/
+  nav ul li{
+    font-size: 20px;
+    background-color: rgb(104, 194, 194);
+    color: teal;
+    list-style: none;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+  }  
+
+  /*menú de navegación - CONTENEDOR - funcionalidad*/
+  .menuNavegacion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    background-color: rgb(104, 194, 194);
+  }
+
+  .menuNavegacion a:hover{
+    background: rgb(71, 163, 163);
+  }
+  
+  
+  .texto{
+    color: rgb(104, 194, 194);
+    font-size: small;
+  }
+
+  
+  a{
+    text-decoration: none;
+  }
+
+  a:link, a:visited{
+    color: teal;
+  }
+
+  header{
+    border-bottom: 2px solid black;
+  }
+
+  footer{
+    border-top: 2px solid black;   
+    text-align: center; 
+    padding: 3px;
+  }
+
+  .redesSociales{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    text-align: right !important;
+  }
+
+  .textoFooter{
+    color: teal;
+    font-size: small;
+  }
+
+  .preguntasFrecuentes{
+    color: rgb(104, 194, 194);
+    list-style: none;
+    line-height: 2.6;
+    font-style: italic;
+    transition: transform 1s ease-in-out;
+}
+
+.preguntasFrecuentes:hover{
+    transform: rotateZ(1deg);
+  }
+
+  .encabezado{
+    background-color: rgb(104, 194, 194);
+    border: 0px;
+        
+  }
+
+  img.logo{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  }
+
+  
+  .textoEncabezado{
+    color: rgb(104, 194, 194);
+    font-size: 15px;
+    font-style: italic;
+  }
+
+  div{
+    border: 0px;
+    
+  }
+
+  /*index - contenedor de fotos*/
+  .indexPics{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    margin: 5px;
+    
+    
+  }
+  /*index - cada foto*/
+  .picsItem{
+    max-width: 550px;
+    height: auto;
+
+  }
+
+  /*destinos - tours que se ofrecen*/
+  #paquetesDisponibles{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+  }
+
+  /*destinos - cajas contenedoras de cada tour*/
+  .columnasDestinos{
+    background-color:rgb(104, 194, 194);
+    max-width: 330px;
+    height: 450px;
+    margin: 8px;
+    color: teal;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    
+  }
+
+  article div{
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .fotosDestinos{
+    max-height: 360px;
+    max-width: auto;
+    
+  }
+
+  
+  h2{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+  }
+
+  h2 div{
+    align-self: center;
+  }
+
+
+  /*destinos - botones*/
+  button{
+    background-color: rgb(104, 194, 194);
+    color: white;
+    border: 2px solid teal;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 3px;
+    border-radius: 4px;
+  }
+
+  /*destinos - botones*/
+  button:hover{
+    background-color:rgb(156, 201, 243);
+    color: white
+  }
+
+  .contenedorMasAngosto{
+    max-width: 1400px;
+    margin: auto;    
+    text-align: center;
+  }
+
+  #encabezadoNosotros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  } 
+
+  /*nosotros - grid - contenedor*/
+  #gridNosotros{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 35% 20% auto;
+    grid-template-rows: 360px 360px 360px;
+    grid-template-areas:
+      "fotoNosotrosArbol atencion descripcionAtencion"
+      "fotoNosotrosBosque satisfaccion descripcionSatisfaccion"
+      "fotoNosotrosCiudad seguimiento descripcionSeguimiento";
+    font-size: 27px;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+            
+  }
+
+  .itemNosotrosAtencion{
+    grid-area: atencion;
+    align-self: center;
+    justify-self: center;
+    
+  }
+
+  .itemNosotrosDescripcionAtencion{
+    grid-area: descripcionAtencion;
+    align-self: center;
+    justify-self: center;
+    
+  }
+
+  .itemNosotrosSatisfaccion{
+    grid-area: satisfaccion;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .itemNosotrosDescripcionSatisfaccion{
+    grid-area: descripcionSatisfaccion;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .itemNosotrosSeguimiento{
+    grid-area: seguimiento;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .itemNosotrosDescripcionSeguimiento{
+    grid-area: descripcionSeguimiento;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .fotoNosotrosArbol{
+    grid-area: fotoNosotrosArbol;
+    max-width: 480px;
+    max-height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .fotoNosotrosBosque{
+    grid-area: fotoNosotrosBosque;
+    max-width: 480px;
+    max-height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  .fotoNosotrosCiudad{
+    grid-area: fotoNosotrosCiudad;
+    max-width: 480px;
+    max-height: auto;
+    align-self: center;
+    justify-self: center;
+  }
+
+  
+  @media only screen and (max-width: 1199px){
+    #gridNosotros{
+      background-color: violet;
+      grid-template-columns: 60% auto;
+      grid-template-rows: 200px 250px 200px 250px 200px 250px;
+      grid-template-areas:
+        "fotoNosotrosArbol atencion"
+        "descripcionAtencion descripcionAtencion"
+        "fotoNosotrosBosque satisfaccion"
+        "descripcionSatisfaccion descripcionSatisfaccion"
+        "fotoNosotrosCiudad seguimiento"
+        "descripcionSeguimiento descripcionSeguimiento";
+      margin: auto;  
+      max-width: 1199px;
+      justify-items: right;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+  }
+
+  @media only screen and (max-width: 767px){
+    #gridNosotros{
+      background-color: rgb(104, 194, 194);
+      grid-template-columns: 60% auto;
+      grid-template-rows: 200px 250px 200px 250px 200px 250px;
+      grid-template-areas:
+        "fotoNosotrosArbol atencion"
+        "descripcionAtencion descripcionAtencion"
+        "fotoNosotrosBosque satisfaccion"
+        "descripcionSatisfaccion descripcionSatisfaccion"
+        "fotoNosotrosCiudad seguimiento"
+        "descripcionSeguimiento descripcionSeguimiento";
+      margin: auto;  
+      max-width: 767px;
+      justify-items: right;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+  }
+  
+  @media only screen and (max-width: 480px){
+    #gridNosotros{
+      background-color: teal;
+      grid-template-columns: 100%;
+      grid-template-rows: 200px 200px 200px;
+      grid-template-areas:
+        "fotoNosotrosArbol"
+        "atencion"
+        "descripcionAtencion"
+        "fotoNosotrosBosque"
+        "satisfaccion"
+        "descripcionSatisfaccion"
+        "fotoNosotrosCiudad"
+        "seguimiento"
+        "descripcionSeguimiento";
+      margin: auto;  
+      max-width: 480px;
+      justify-items: center;
+      align-items: center;
+      overflow: hidden;
+      text-align: center;
+    }    

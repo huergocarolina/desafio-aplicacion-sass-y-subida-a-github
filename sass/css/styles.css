@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/*variables*/
+/*importaciones*/
+/* line 1, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_header.scss */
+img.logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+}
+
+/*en qué sección del sitio me encuentro*/
+/* line 12, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_header.scss */
+header div h1 {
+  color: #68c2c2;
+  font-size: 45px;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 0px;
+}
+
+/* line 24, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_header.scss */
+header {
+  border-bottom: 2px solid black;
+}
+
+/* line 1, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_encabezado.scss */
+#encabezadoContacto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 7, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_encabezado.scss */
+#encabezadoContacto .encabezadoTexto {
+  background-color: #68c2c2;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+/* line 14, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_encabezado.scss */
+#encabezadoContacto .encabezadoTexto p {
+  font-size: small;
+}
+
+/*menú de navegación - estético*/
+/* line 2, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_navegacion.scss */
+nav ul li {
+  font-size: 20px;
+  background-color: #68c2c2;
+  color: teal;
+  list-style: none;
+  text-align: center;
+  margin: 2px;
+  padding: 2px;
+}
+
+/*menú de navegación - CONTENEDOR - funcionalidad*/
+/* line 13, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_navegacion.scss */
+.menuNavegacion {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  list-style: none;
+  margin: 0;
+  padding: 25px;
+  background-color: #68c2c2;
+}
+
+/* line 23, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_navegacion.scss */
+.menuNavegacion a:hover {
+  background: #47a3a3;
+}
+
+/* line 28, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_navegacion.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 1, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_footer.scss */
+footer {
+  border-top: 2px solid black;
+  text-align: center;
+  padding: 3px;
+}
+
+/* line 7, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_footer.scss */
+.redesSociales {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: auto;
+  text-align: right !important;
+}
+
+/* line 17, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_footer.scss */
+footer div p {
+  color: teal;
+  font-size: small;
+  font-style: normal;
+}
+
+/* line 1, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+#gridContacto {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 80px 80px 80px 80px;
+  grid-template-areas: ". nombre nombre ." ". comentariosPasajero comentariosPasajero ." ". comentariosBox comentariosBox ." ". limpiarForm enviarForm .";
+  justify-items: center;
+  align-items: center;
+}
+
+/* line 15, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+.datos {
+  grid-area: nombre;
+  align-self: center;
+  justify-self: center;
+}
+
+/* line 21, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+.comentarios {
+  grid-area: comentariosPasajero;
+  align-self: center;
+  justify-self: center;
+}
+
+/* line 27, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+.comentariosBox {
+  grid-area: comentariosBox;
+  align-self: center;
+  justify-self: center;
+}
+
+/* line 33, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+.limpiar {
+  grid-area: limpiarForm;
+  align-self: center;
+  justify-self: right;
+}
+
+/* line 39, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/_estructura.scss */
+.enviar {
+  grid-area: enviarForm;
+  align-self: center;
+  justify-self: left;
+}
+
+/* line 29, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.cabecera div {
+  background-color: teal;
+  color: black;
+  border: solid 5px #68c2c2;
+}
+
+/* line 41, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.textoFooter {
+  color: black;
+}
+
+/* line 45, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.redesSociales {
+  color: teal;
+}
+
+/* line 55, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* line 60, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: 2px;
+}
+
+/* line 65, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+#encabezadoContacto {
+  margin: 15px;
+}
+
+/* line 69, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.encabezadoTexto {
+  color: black;
+}
+
+/* line 73, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+p {
+  color: #68c2c2;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+}
+
+/* line 79, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+fieldset {
+  padding: 15px;
+}
+
+/* line 83, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.limpiar {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: teal;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+
+/* line 94, ../../../../../Documents/Curso Desarrollo Web/alumno-huergo-carolina/sass/sass/styles.scss */
+.enviar {
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: teal;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+
+/*# sourceMappingURL=styles.css.map */

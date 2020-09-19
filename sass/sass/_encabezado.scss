@@ -1,0 +1,22 @@
+#encabezadoContacto{
+   display: flex;
+   flex-direction: column;
+   justify-content: center; 
+   align-items: center; 
+   margin: auto;
+  
+  .encabezadoTexto{
+    background-color: rgb(104, 194, 194);
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+    
+     p{
+      font-size: small;
+    }
+
+  } 
+
+}
+    

@@ -1,0 +1,104 @@
+/*variables*/
+$color-fuente-principal: rgb(104, 194, 194);
+$color-fuente-secundario: black;
+$otro-color: teal;
+$centro: center;
+$margen-especial: 15px;
+$margen-body: 2px;
+$texto-cursiva: italic;
+$texto-normal: normal;
+$padding-normal: 3px;
+$padding-especial: 25px;
+$padding-fieldset: 15px;
+$margin-block: 1em;
+
+/*importaciones*/
+@import "header";
+@import "encabezado";
+@import "navegacion";
+@import "footer";
+@import "estructura";
+
+// -mixin-
+@mixin otroEstilo ($fondo,$colorFuente,$borde) { 
+  background-color: $fondo;
+  color: $colorFuente;
+  border: $borde;
+}
+
+.cabecera div{
+  @include otroEstilo($otro-color,$color-fuente-secundario, solid 5px $color-fuente-principal)
+}
+
+// -mixin-
+$infoFooter: (
+  textoFooter: si,
+  redesSociales:no
+);
+
+@each $item, $nocturno in $infoFooter {
+  @if ($nocturno == "si") {
+    .#{$item} {
+      color: $color-fuente-secundario;
+    }
+  } @else {
+    .#{$item} {
+      color: teal;
+    }
+  }
+  
+}
+
+
+// todo lo demás
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  margin: $margen-body;
+}
+
+#encabezadoContacto{
+  margin: $margen-especial;
+}
+  
+.encabezadoTexto{
+  color: $color-fuente-secundario;
+}
+
+p {
+  color: $color-fuente-principal;
+  margin-block-start: $margin-block;
+  margin-block-end: $margin-block;
+}
+
+fieldset{
+  padding: $padding-fieldset;
+}
+
+.limpiar{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: $otro-color;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+
+.enviar{
+  font-family: 'Josefin Sans', sans-serif;
+  background-color: $otro-color;
+  border: none;
+  text-decoration: none;
+  color: white;
+  padding: 20px 20px;
+  margin: 20px 20px;
+  border-radius: 4px;
+}
+

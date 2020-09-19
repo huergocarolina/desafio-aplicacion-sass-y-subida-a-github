@@ -1,0 +1,153 @@
+body {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a{
+    color: teal;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color: teal;
+}
+
+.logo{
+    max-width: 150px;
+    max-height: auto;
+    margin: auto;
+}
+
+.col-md-3{
+    padding: 0px;
+    align-self: center;
+}
+
+.seccion{
+    color: rgb(104, 194, 194);
+    font-size: 45px;
+    text-align: center;
+    letter-spacing: 3px;
+    margin: auto;
+    padding: 0px;
+}
+
+.col-md-6{
+    padding: 0px;
+    align-self: center;
+
+}
+
+.container-fluid{
+    align-content: center;
+    justify-content: center;
+}
+
+p{
+    margin: auto;
+    text-align: center !important;
+}
+
+button{
+    margin: auto;
+    text-align: center !important;
+}
+
+.img-fluid{
+    max-width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+footer{
+    border-top: 2px solid black;   
+    text-align: center; 
+    padding: 3px;
+  }
+
+  .redesSociales{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: auto;
+    text-align: right !important;
+  }
+
+  .textoFooter{
+    color: teal;
+    font-size: small;
+  }
+
+
+
+
+/*
+.col-md-4{
+    padding: 0px;
+    align-self: center;
+    text-align: center;
+}*/
+
+.imgIndex{
+    max-width: auto;
+    max-height: 600px;
+}
+
+.navbar{
+    font-size: 20px;
+    background-color: rgb(104, 194, 194) !important;
+}
+
+.navbar-nav {
+    margin: auto;
+    padding: auto;
+    text-align: center;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.item{
+    width: 100%;
+    max-height: auto;
+}
+
+h2{
+    margin-left: 10px;
+}
+
+.textoNewsletter{
+    text-align: left;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+form{
+    margin-left: 10px;
+}
+
+/*menú de navegación - estético
+nav ul li{
+    font-size: 20px;
+    background-color: rgb(104, 194, 194);
+    color: teal;
+    list-style: none;
+    text-align: center;
+    margin: 2px;
+    padding: 2px;
+    text-decoration: none !important;
+  }  
+
+  /*menú de navegación - CONTENEDOR - funcionalidad
+.menuNavegacion{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 25px;
+    background-color: rgb(104, 194, 194);
+}
+
+.menuNavegacion a:hover{
+    background: rgb(71, 163, 163);
+    text-decoration: none;
+    color: white;
+}*/

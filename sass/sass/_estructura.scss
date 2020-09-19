@@ -1,0 +1,45 @@
+#gridContacto{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 80px 80px 80px 80px;
+    grid-template-areas:
+    ". nombre nombre ."
+    ". comentariosPasajero comentariosPasajero ."
+    ". comentariosBox comentariosBox ."
+    ". limpiarForm enviarForm ."
+    ;
+    justify-items: center;
+    align-items: center;
+    margin: auto;
+}
+
+.datos{
+    grid-area: nombre;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+}
+
+.comentarios{
+    grid-area: comentariosPasajero;
+    align-self: center;
+    justify-self: center;
+}
+
+.comentariosBox{
+    grid-area: comentariosBox;
+    align-self: center;
+    justify-self: center;
+}
+
+.limpiar{
+    grid-area: limpiarForm;
+    align-self: center;
+    justify-self: right;
+}
+
+.enviar{
+    grid-area: enviarForm;
+    align-self: center;
+    justify-self: left;
+}

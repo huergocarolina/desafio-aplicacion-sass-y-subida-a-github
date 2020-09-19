@@ -1,0 +1,24 @@
+footer{
+  border-top: 2px solid black;   
+  text-align: center; 
+  padding: 3px;
+}
+
+.redesSociales{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  margin: auto;
+  text-align: right !important;
+}
+
+footer{
+    div{
+      p{
+        color: teal;
+        font-size: small;
+        font-style: normal;
+      }
+    }
+}
+
